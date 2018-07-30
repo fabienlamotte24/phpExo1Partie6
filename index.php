@@ -6,6 +6,7 @@
   </head>
   <body>
     <?php
+    /*Affichage des variables de l'url*/
       echo $_GET['lastname'] . ' ' . $_GET['firstname'];
     ?>
   </body>
