@@ -7,7 +7,9 @@
   <body>
     <?php
     /*Affichage des variables de l'url*/
-      echo $_GET['lastname'] . ' ' . $_GET['firstname'];
+    if(isset($_GET['lastname']) && isset($_GET['firstname'])){
+      echo $_GET['firstname'] . ' ' . $_GET['lastname'];
+    }
     ?>
   </body>
 </html>
