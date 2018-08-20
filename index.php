@@ -6,9 +6,12 @@
   </head>
   <body>
     <?php
-    /*Affichage des variables de l'url*/
-    if(isset($_GET['lastname']) && isset($_GET['firstname'])){
+    //Affichage des paramètres de l'url
+    //$_GET variable superGlobale
+    if(!empty($_GET['lastname']) && !empty($_GET['firstname'])){
       echo $_GET['firstname'] . ' ' . $_GET['lastname'];
+    } else {
+        echo 'Veuillez vérifier les paramètres d\'url';
     }
     ?>
   </body>
