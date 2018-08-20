@@ -7,7 +7,7 @@
   <body>
     <?php
     //Affichage des paramètres de l'url
-    //$_GET variable superGlobale
+    //$_GET = variable superGlobale
     if(!empty($_GET['lastname']) && !empty($_GET['firstname'])){
       echo $_GET['firstname'] . ' ' . $_GET['lastname'];
     } else {
